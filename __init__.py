@@ -5,4 +5,4 @@ from .events.transbank_new_payment import TransbankNewPaymentEvent
 from .responses.api_response import APIResponse
 from .responses.encoding import json_encode
 from .responses.status import StatusCode
-from .transbank import TransbankController, TransbankCheckoutRequest, TransbankCheckoutResponse
+from .transbank import TransbankController, TransbankCheckoutRequest, TransbankCheckoutResponse, TransbankNotifyPayment
