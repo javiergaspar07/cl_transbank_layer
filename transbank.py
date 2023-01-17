@@ -69,14 +69,14 @@ class TransbankController(object):
 
         return response
 
-    def get_transaction_status_commit(self, token):
+    def confirm_transaction(self, token):
         try:
             commit_result = self.transaction.commit(token)
         except TransactionCommitError:
             commit_result = None
         return commit_result
 
-    def get_transaction_status(self, token:str) -> dict:
+    def transaction_status(self, token:str) -> dict:
         """
         Make a request to Transbank API to get a transaction status.
 
